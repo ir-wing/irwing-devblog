@@ -26,7 +26,7 @@ window.onload = function() {
                               if (bd.result.content[_index].tag == "figure") {
                                         var _image = image.cloneNode(true);
                                         image.parentNode.appendChild(_image);
-                                        _image.src = bd.result.content[_index].children[0][0].attrs.src;
+                                        _image.src = "https://telegra.ph" + bd.result.content[_index].children[0][0].attrs.src;
                               }
                     }
           }
