@@ -20,12 +20,12 @@ window.onload = function() {
                     for (var _index = 0 ; _index < bd.result.content.length; _index++) {
                               if (bd.result.content[_index].tag == "p") {
                                         var _text = text.cloneNode(true);
-                                        text.parentNode.AppendChild(_text);
+                                        text.parentNode.appendChild(_text);
                                         _text.textContent = bd.result.content[_index].children[0];
                               }
                               if (bd.result.content[_index].tag == "figure") {
                                         var _image = image.cloneNode(true);
-                                        image.parentNode.AppendChild(_image);
+                                        image.parentNode.appendChild(_image);
                                         _image.src = bd.result.content[_index].children[0].attrs.src;
                               }
                     }
