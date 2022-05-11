@@ -45,7 +45,7 @@ window.onload = function() { // When the webpage loads
                               desc.textContent = data.result.description;
                               openButton.onclick = function()
                               {
-                                        localStorage.setItem("blogData",request.responseText);
+                                        localStorage.setItem("blogData",JSON.stringify(data));
                                         var newtab = window.open("blogpage.html", "_parent");
                                         
                                         
