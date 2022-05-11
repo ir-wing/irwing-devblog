@@ -45,8 +45,9 @@ window.onload = function() { // When the webpage loads
                               desc.textContent = data.result.description;
                               openButton.onclick = function()
                               {
+                                        localStorage.setItem("blogData",data);
                                         var newtab = window.open("blogpage.html", "_parent");
-                                        newtab.data = data;
+                                        
                                         
                               }
                     }
