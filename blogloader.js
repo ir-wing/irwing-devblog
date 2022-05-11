@@ -9,7 +9,7 @@ var findChild = function(node,name)
 }
 window.onload = function() {
           
-          var bd = window.opener.data;
+          var bd = localStorage.getItem("blogData");
           var e = document.getElementById("exampleBlog");
           console.log(bd);
           var text = findChild(e, "blogContent");
